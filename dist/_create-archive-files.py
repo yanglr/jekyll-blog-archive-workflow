@@ -1,3 +1,4 @@
+# coding: utf-8
 import re
 import os
 import json
@@ -80,7 +81,7 @@ if __name__ == '__main__':
             for archive_value in list(set(json_data[archive_type])):
                 value_escaped = re.sub(r'\s|\.', '-', archive_value)
                 value_escaped = re.sub(r'#', 'sharp', value_escaped)
-                value_escaped = re.sub(r'[^a-z0-9A-Z_]', '-', value_escaped)
+                # value_escaped = re.sub(r'[^a-z0-9A-Z_]', '-', value_escaped)
                 value_escaped = value_escaped.lower()
                 front_matter = create_front_matter(
                     arch_type, archive_type, archive_value, value_escaped)
