@@ -8,7 +8,8 @@ import requests
 
 archive_types = {
     'tag': 'tags',
-    'category': 'categories'
+    'category': 'categories',
+    'year': 'years'
 }
 
 input_options = ['delete_archives', 'delete_archives_folder']
