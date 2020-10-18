@@ -6,7 +6,6 @@ import pathlib
 import requests
 
 archive_types = {
-    'year': 'years',
     'tag': 'tags',
     'category': 'categories'
 }
